@@ -5,7 +5,7 @@ const fetch = require("node-fetch")
 const pluralize = require("pluralize")
 
 const API_KEY = process.env.GHOST_INSPECTOR_API_KEY
-const ORG_ID = "6185af8b05bc2f0b13a2ae6f"
+const ORG_ID = process.env.GHOST_INSPECTOR_ORG_ID
 const POLL_RATE = 3000
 
 const rl = readline.createInterface({
